@@ -48,7 +48,8 @@ public class VMenu extends JFrame {
         /* Configuración del jframe basicos, como nombre, tamaño, si es o no posible cambiar su tamaño una vez ejecutado
            el tipo de layout, el color de fondo y el tipo de letra a usar
         */
-        setTitle("Menu");
+        setTitle("SAC - Menu");
+        setIconImage(new ImageIcon("img/logo_uptc.png").getImage());
         setSize(800, 600);
         setResizable(false);
         setLayout(new BorderLayout());
@@ -103,7 +104,7 @@ public class VMenu extends JFrame {
         buttonBack.setFont(googleFont2);
         buttonBack.setBackground(Color.GRAY);
 
-        buttonCharge = new JButton("Cargar estudiante");
+        buttonCharge = new JButton("Cargar Menu");
         buttonCharge.addActionListener(listener);
         buttonCharge.setActionCommand("cargar");
         buttonCharge.setHorizontalAlignment(JLabel.CENTER);
